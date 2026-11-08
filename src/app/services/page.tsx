@@ -42,9 +42,9 @@ export default function ServicesPage() {
         </div>
       </section>
       <section aria-label="All services" className="py-20">
-        <div className="mx-auto grid max-w-6xl gap-6 px-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
-            <Reveal key={s.id} delay={(i % 3) * 0.05}>
+            <Reveal key={s.id} delay={(i % 3) * 0.05} className={s.id === "deployment-maintenance" ? "md:col-span-2 lg:col-span-3" : ""}>
               <ServiceCard s={s} />
             </Reveal>
           ))}

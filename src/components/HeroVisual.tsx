@@ -18,6 +18,9 @@ export function HeroVisual() {
       <g stroke="#7C5CFF" strokeOpacity=".35" strokeWidth="1" fill="none">
         <polyline points={nodes.map((n) => `${n.x},${n.y}`).concat(`${nodes[0].x},${nodes[0].y}`).join(" ")} />
       </g>
+      {nodes.map((n, i) => (
+        <circle key={`${n.label}-pulse`} cx={n.x} cy={n.y} r="28" fill="#5C8BFF" className="network-node-pulse" style={{ animationDelay: `${i * 0.35}s` }} />
+      ))}
       <circle cx="220" cy="190" r="62" fill="#121A33" stroke="#2F6BFF" strokeOpacity=".6" />
       <circle cx="220" cy="190" r="44" fill="#2F6BFF" fillOpacity=".15" className="hub-pulse" />
       <circle cx="232" cy="178" r="8" fill="#fff" />

@@ -37,6 +37,7 @@ export const services: {
   description: string;
   outcome: string;
   cta: string;
+  tech: string[];
 }[] = [
   {
     id: "website-development",
@@ -45,6 +46,7 @@ export const services: {
     description: "Business websites, landing pages and portfolios.",
     outcome: "Look credible online and turn visitors into enquiries.",
     cta: "Plan my website",
+    tech: ["Next.js", "React", "Tailwind CSS"],
   },
   {
     id: "web-application-development",
@@ -53,6 +55,7 @@ export const services: {
     description: "Custom dashboards, management systems, CRM and inventory solutions.",
     outcome: "Replace spreadsheets and manual tracking with one system your team uses daily.",
     cta: "Discuss my app",
+    tech: ["React", "TypeScript", "PostgreSQL"],
   },
   {
     id: "java-full-stack-development",
@@ -61,6 +64,7 @@ export const services: {
     description: "Spring Boot, React, REST APIs and databases.",
     outcome: "Get a dependable, well-structured product that can grow with your business.",
     cta: "Talk to our developers",
+    tech: ["Java", "Spring Boot", "React"],
   },
   {
     id: "business-automation",
@@ -69,6 +73,7 @@ export const services: {
     description: "Workflow automation, integrations and notifications.",
     outcome: "Save hours on repetitive tasks and cut down on errors.",
     cta: "Automate a workflow",
+    tech: ["APIs", "Webhooks", "JavaScript"],
   },
   {
     id: "ai-solutions",
@@ -77,6 +82,7 @@ export const services: {
     description: "AI chatbots, document assistants and intelligent business tools.",
     outcome: "Answer questions faster and make better use of your own documents and data.",
     cta: "Explore AI options",
+    tech: ["AI", "RAG", "Vector search"],
   },
   {
     id: "api-integration",
@@ -85,6 +91,7 @@ export const services: {
     description: "Connect third-party services and business platforms.",
     outcome: "Keep your tools in sync so data flows without copy-pasting.",
     cta: "Connect my tools",
+    tech: ["REST APIs", "OAuth", "Webhooks"],
   },
   {
     id: "deployment-maintenance",
@@ -93,21 +100,32 @@ export const services: {
     description: "Hosting, Docker deployment, updates and technical support.",
     outcome: "Stay online, secure and up to date without managing servers yourself.",
     cta: "Get support",
+    tech: ["Docker", "Cloud", "Monitoring"],
   },
 ];
 
-export const team = [
-  "Mohamed Jasim",
-  "Yugashri",
-  "Sowndarya",
-  "Kiruthisha",
-].map((name) => ({
-  name,
-  // TODO: replace with real role, short bio and photo (see README)
-  role: "JoySky team member",
-  bio: "Works with the JoySky team to design, build and support digital solutions for businesses.",
-  photo: undefined as string | undefined,
-}));
+export const team: { name: string; role: string; bio: string; avatarUrl?: string }[] = [
+  {
+    name: "Mohamed Jasim",
+    role: "Tech Lead & Full-Stack Architect (Spring Boot & Cloud Systems)",
+    bio: "Architects full-stack products and cloud systems with Spring Boot, building dependable foundations that scale.",
+  },
+  {
+    name: "Yugashri",
+    role: "UI/UX Designer & Frontend Engineer (React & Tailwind CSS)",
+    bio: "Designs clear, accessible experiences and brings them to life with React and Tailwind CSS.",
+  },
+  {
+    name: "Sowndarya",
+    role: "Backend Developer (API Integration & Database Systems)",
+    bio: "Builds reliable APIs and database systems that keep business applications connected and organized.",
+  },
+  {
+    name: "Kiruthisha",
+    role: "QA Engineer & Client Success Lead",
+    bio: "Keeps product quality high through thoughtful testing and makes sure client needs stay at the center.",
+  },
+];
 
 export type WhyIcon = "practical" | "comms" | "modern" | "scale" | "collab" | "support";
 
@@ -120,10 +138,22 @@ export const reasons: { icon: WhyIcon; title: string; text: string }[] = [
   { icon: "support", title: "Ongoing support", text: "Hosting, updates and fixes after launch, so nothing is left hanging." },
 ];
 
-export const projects = [
+export const projects: {
+  slug: string;
+  name: string;
+  category: "Web Apps" | "Automation" | "AI";
+  image: string;
+  alt: string;
+  problem: string;
+  solution: string;
+  tech: string[];
+  demoUrl: string;
+  githubUrl: string;
+}[] = [
   {
     slug: "business-website",
     name: "Business Website",
+    category: "Web Apps",
     image: "/projects/business-website.svg",
     alt: "Sample business website layout with a hero section and service cards",
     problem: "Small businesses often lack a fast, professional site that explains what they do and makes contact easy.",
@@ -135,6 +165,7 @@ export const projects = [
   {
     slug: "inventory-management-system",
     name: "Inventory Management System",
+    category: "Web Apps",
     image: "/projects/inventory-system.svg",
     alt: "Sample inventory dashboard with stock table and summary charts",
     problem: "Stock tracked in spreadsheets leads to mismatched counts and late reordering.",
@@ -146,11 +177,24 @@ export const projects = [
   {
     slug: "appointment-booking-system",
     name: "Appointment Booking System",
+    category: "Automation",
     image: "/projects/appointment-booking.svg",
     alt: "Sample appointment booking calendar with time slots",
     problem: "Booking by phone and messages causes double bookings and missed appointments.",
     solution: "Online slot booking with confirmations and reminder notifications.",
     tech: ["Next.js", "Node.js", "Email notifications"],
+    demoUrl: "",
+    githubUrl: "",
+  },
+  {
+    slug: "document-assistant",
+    name: "AI Document Assistant",
+    category: "AI",
+    image: "/projects/document-assistant.svg",
+    alt: "Sample AI document assistant with a source library and answer panel",
+    problem: "Teams spend time searching long documents for answers and checking where information came from.",
+    solution: "A document assistant that responds to questions using a private knowledge library and links answers to their sources.",
+    tech: ["AI", "RAG", "Next.js", "Vector search"],
     demoUrl: "",
     githubUrl: "",
   },

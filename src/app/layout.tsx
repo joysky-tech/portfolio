@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { Analytics } from "@/components/Analytics";
 import { site } from "@/lib/config";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const body = Manrope({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 const display = Sora({ subsets: ["latin"], variable: "--font-display", display: "swap" });

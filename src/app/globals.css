@@ -21,5 +21,7 @@
 
 .flow-line line { animation: dash 14s linear infinite; }
 .hub-pulse { transform-origin: 220px 190px; animation: pulse 4s ease-in-out infinite; }
+.network-node-pulse { transform-box: fill-box; transform-origin: center; animation: node-pulse 3.5s ease-out infinite; }
 @keyframes dash { to { stroke-dashoffset: -100; } }
 @keyframes pulse { 0%,100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.12); opacity: .5; } }
+@keyframes node-pulse { 0% { transform: scale(.55); opacity: .32; } 75%,100% { transform: scale(1.5); opacity: 0; } }

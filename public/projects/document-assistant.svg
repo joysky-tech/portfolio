@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#EEF1F7"/>
+  <rect x="34" y="24" width="732" height="452" rx="20" fill="#fff" stroke="#DDE3EF"/>
+  <path d="M54 24h692a20 20 0 0 1 20 20v26H34V44a20 20 0 0 1 20-20Z" fill="#0B1020"/>
+  <circle cx="60" cy="47" r="6" fill="#FF7B78"/><circle cx="81" cy="47" r="6" fill="#FFC65C"/><circle cx="102" cy="47" r="6" fill="#5C8BFF"/>
+  <rect x="139" y="42" width="430" height="10" rx="5" fill="#293451"/>
+  <rect x="58" y="88" width="202" height="363" rx="12" fill="#F6F8FC"/>
+  <rect x="77" y="108" width="32" height="32" rx="10" fill="#E9E4FF"/>
+  <path d="M85 117h16M85 123h16M85 129h11" stroke="#7C5CFF" stroke-width="2" stroke-linecap="round"/>
+  <text x="120" y="128" font-family="sans-serif" font-size="13" font-weight="700" fill="#0B1020">Knowledge base</text>
+  <rect x="77" y="157" width="164" height="31" rx="8" fill="#E9E4FF"/>
+  <path d="M91 166h9l5 5v9H91Z" fill="#7C5CFF"/><rect x="109" y="168" width="85" height="6" rx="3" fill="#26314A"/><rect x="109" y="178" width="61" height="5" rx="2.5" fill="#AAB4C8"/>
+  <path d="M91 207h9l5 5v9H91Z" fill="#DCE8FF"/><rect x="109" y="209" width="93" height="6" rx="3" fill="#26314A"/><rect x="109" y="219" width="58" height="5" rx="2.5" fill="#AAB4C8"/>
+  <path d="M91 248h9l5 5v9H91Z" fill="#DDF5EC"/><rect x="109" y="250" width="82" height="6" rx="3" fill="#26314A"/><rect x="109" y="260" width="67" height="5" rx="2.5" fill="#AAB4C8"/>
+  <rect x="77" y="304" width="164" height="122" rx="10" fill="#fff" stroke="#DDE3EF"/>
+  <text x="91" y="328" font-family="sans-serif" font-size="10" font-weight="700" fill="#0B1020">Sources indexed</text>
+  <rect x="91" y="342" width="112" height="6" rx="3" fill="#DDE3EF"/><rect x="91" y="342" width="88" height="6" rx="3" fill="#7C5CFF"/>
+  <text x="91" y="373" font-family="sans-serif" font-size="19" font-weight="700" fill="#0B1020">24</text><text x="121" y="373" font-family="sans-serif" font-size="10" fill="#77839B">documents</text>
+  <text x="291" y="111" font-family="sans-serif" font-size="17" font-weight="700" fill="#0B1020">Ask your documents</text>
+  <text x="291" y="135" font-family="sans-serif" font-size="11" fill="#77839B">Answers grounded in your team's knowledge</text>
+  <rect x="339" y="161" width="373" height="55" rx="14" fill="#F1F3F8"/>
+  <text x="358" y="184" font-family="sans-serif" font-size="11" fill="#26314A">What is our process for onboarding a new client?</text>
+  <text x="358" y="201" font-family="sans-serif" font-size="10" fill="#77839B">You</text>
+  <rect x="291" y="232" width="421" height="150" rx="14" fill="#F5F2FF" stroke="#E4DFFF"/>
+  <circle cx="315" cy="257" r="10" fill="#7C5CFF"/><path d="M311 257h8M315 253v8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="334" y="261" font-family="sans-serif" font-size="11" font-weight="700" fill="#0B1020">Assistant</text>
+  <rect x="312" y="280" width="352" height="7" rx="3.5" fill="#8993A8"/><rect x="312" y="296" width="371" height="7" rx="3.5" fill="#8993A8"/>
+  <rect x="312" y="312" width="326" height="7" rx="3.5" fill="#8993A8"/>
+  <rect x="312" y="338" width="204" height="26" rx="8" fill="#fff" stroke="#D8D0FF"/>
+  <path d="M326 345h8l4 4v8h-12Z" fill="#7C5CFF"/><text x="345" y="355" font-family="sans-serif" font-size="9" font-weight="600" fill="#6444E6">Onboarding guide · p. 4</text>
+  <rect x="291" y="402" width="421" height="35" rx="10" fill="#fff" stroke="#DDE3EF"/>
+  <text x="309" y="424" font-family="sans-serif" font-size="10" fill="#AAB4C8">Ask a question...</text>
+  <circle cx="690" cy="419" r="11" fill="#7C5CFF"/><path d="m686 419 3 3 5-6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

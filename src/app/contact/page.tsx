@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { Mail, MessageCircle } from "lucide-react";
+import { Clock3, Mail, MessageCircle } from "lucide-react";
 import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/config";
 import { ContactForm } from "@/components/ContactForm";
@@ -37,6 +37,10 @@ export default function ContactPage() {
               </li>
             )}
           </ul>
+          <p className="mt-8 inline-flex items-center gap-2 rounded-xl border border-brand-500/20 bg-brand-500/5 px-4 py-3 text-sm font-medium text-navy-800">
+            <Clock3 className="h-4 w-4 text-brand-600" aria-hidden="true" />
+            We respond within 24 hours.
+          </p>
         </div>
         <Suspense fallback={<div className="h-96 rounded-2xl bg-mist-50" />}>
           <ContactForm />

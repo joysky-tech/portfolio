@@ -48,9 +48,9 @@ export default function HomePage() {
             </h2>
             <p className="mt-3 max-w-xl text-slate-600">From a first website to custom software and the support after launch.</p>
           </Reveal>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((s, i) => (
-              <Reveal key={s.id} delay={(i % 3) * 0.05}>
+              <Reveal key={s.id} delay={(i % 3) * 0.05} className={s.id === "deployment-maintenance" ? "md:col-span-2 lg:col-span-3" : ""}>
                 <ServiceCard s={s} showOutcome={false} />
               </Reveal>
             ))}

@@ -1,5 +1,6 @@
 import { buildMetadata } from "@/lib/seo";
 import { team } from "@/lib/config";
+import Image from "next/image";
 import { WhyChoose } from "@/components/WhyChoose";
 import { CtaBand } from "@/components/CtaBand";
 import { Reveal } from "@/components/Reveal";
@@ -42,14 +43,18 @@ export default function AboutPage() {
       <section aria-labelledby="team-title" className="bg-mist-50 py-20">
         <div className="mx-auto max-w-6xl px-5">
           <h2 id="team-title" className="font-display text-3xl font-bold text-navy-900 md:text-4xl">The team</h2>
-          <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="isolate mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((m, i) => (
-              <li key={m.name}>
+              <li key={m.name} className="min-w-0">
                 <Reveal delay={i * 0.06} className="h-full">
                   <article className="h-full rounded-2xl border border-mist-200 bg-white p-6 shadow-soft">
-                    <span aria-hidden="true" className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-violet-500 font-display text-xl font-bold text-white">
-                      {initials(m.name)}
-                    </span>
+                    {m.avatarUrl ? (
+                      <Image src={m.avatarUrl} alt={`${m.name} avatar`} width={64} height={64} unoptimized className="h-16 w-16 rounded-2xl object-cover" />
+                    ) : (
+                      <span aria-hidden="true" className="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-violet-500 font-display text-xl font-bold text-white">
+                        {initials(m.name)}
+                      </span>
+                    )}
                     <h3 className="mt-5 font-display text-lg font-semibold text-navy-900">{m.name}</h3>
                     <p className="text-sm font-medium text-brand-700">{m.role}</p>
                     <p className="mt-3 text-sm leading-relaxed text-slate-600">{m.bio}</p>

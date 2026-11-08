@@ -51,8 +51,15 @@ export function Footer() {
           )}
         </div>
       </div>
-      <div className="border-t border-navy-700 py-5 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} JoySky. All rights reserved.
+      <div className="border-t border-navy-700 px-5 py-5 text-xs text-slate-400">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 text-center sm:flex-row sm:justify-between sm:text-left">
+          <p>© {new Date().getFullYear()} JoySky. All rights reserved.</p>
+          <nav aria-label="Footer bottom" className="flex flex-wrap justify-center gap-x-5 gap-y-2 sm:justify-end">
+            {nav.slice(2).map((n) => (
+              <Link key={n.href} href={n.href} className="hover:text-white">{n.label}</Link>
+            ))}
+          </nav>
+        </div>
       </div>
     </footer>
   );

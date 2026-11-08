@@ -1,14 +1,12 @@
 import { Info } from "lucide-react";
 import { buildMetadata } from "@/lib/seo";
-import { projects } from "@/lib/config";
-import { ProjectCard } from "@/components/ProjectCard";
 import { CtaBand } from "@/components/CtaBand";
-import { Reveal } from "@/components/Reveal";
+import { ProjectGallery } from "@/components/ProjectGallery";
 
 export const metadata = buildMetadata({
   title: "Portfolio",
   description:
-    "Sample JoySky demo projects: a business website, an inventory management system and an appointment booking system.",
+    "Explore JoySky sample demos in web apps, automation and AI, with the problems and solutions behind each project.",
   path: "/portfolio",
 });
 
@@ -31,13 +29,7 @@ export default function PortfolioPage() {
             <Info className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" aria-hidden="true" />
             These are sample demo projects built to show our approach. They are not client work. Real projects will be added here as they are completed.
           </p>
-          <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((p, i) => (
-              <Reveal key={p.slug} delay={i * 0.06} className="h-full">
-                <ProjectCard p={p} />
-              </Reveal>
-            ))}
-          </div>
+          <ProjectGallery />
         </div>
       </section>
       <CtaBand />
