@@ -107,13 +107,13 @@ export const services: {
 export const team: { name: string; role: string; bio: string; avatarUrl?: string }[] = [
   {
     name: "Mohamed Jasim",
-    role: "Tech Lead & Full-Stack Architect (Spring Boot & Cloud Systems)",
-    bio: "Architects full-stack products and cloud systems with Spring Boot, building dependable foundations that scale.",
+    role: "QA Engineer & Client Success Lead",
+    bio: "Keeps product quality high through thoughtful testing and makes sure client needs stay at the center.",
   },
   {
     name: "Yugashri",
-    role: "UI/UX Designer & Frontend Engineer (React & Tailwind CSS)",
-    bio: "Designs clear, accessible experiences and brings them to life with React and Tailwind CSS.",
+    role: "Tech Lead & Full-Stack Architect (Spring Boot & Cloud Systems)",
+    bio: "Architects full-stack products and cloud systems with Spring Boot, building dependable foundations that scale.",
   },
   {
     name: "Sowndarya",
@@ -122,8 +122,8 @@ export const team: { name: string; role: string; bio: string; avatarUrl?: string
   },
   {
     name: "Kiruthisha",
-    role: "QA Engineer & Client Success Lead",
-    bio: "Keeps product quality high through thoughtful testing and makes sure client needs stay at the center.",
+    role: "UI/UX Designer & Frontend Engineer (React & Tailwind CSS)",
+    bio: "Designs clear, accessible experiences and brings them to life with React and Tailwind CSS.",
   },
 ];
 
