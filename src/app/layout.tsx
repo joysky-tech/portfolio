@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { Analytics } from "@/components/Analytics";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { site } from "@/lib/config";
 
 const body = Manrope({ subsets: ["latin"], variable: "--font-body", display: "swap" });
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd data={organization} />
         <JsonLd data={website} />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
